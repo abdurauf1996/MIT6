@@ -1,27 +1,15 @@
-// Module package CORE
+/*function parametr(abc) {
+  let count = 0;
+  for (let i = 0; i < abc.length; i++) {
+    if (count === abc.charAt) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(parametr("ab134"));
+const validator = require("vali");*/
 
-/*setTimeout(function () {
-  console.log("ishga tushdi");
-}, 5000);
-
-let number = 0;
-setInterval(function () {
-  console.log("hisob", number);
-  number++;
-}, 0);*/
-
-const fs = require("fs");
-const { networkInterfaces } = require("os");
-const data = fs.readFileSync("./input.txt", "utf8");
-console.log(data);
-
-console.log("****************");
-
-fs.writeFileSync("./input.txt", `${data} \n\t\t by Abdurauf`);
-
-const new_data = fs.readFileSync("./input.txt", "utf8");
-console.log(new_data);
-
-// Module package EXTERNAL
-
-// Module package
+const validator_1 = require("validator");
+const test_1 = validator_1.isInt("10");
+console.log("test:", test_1);

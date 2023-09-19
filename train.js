@@ -1,12 +1,14 @@
-function number(a) {
-  let count = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (!isNaN(a[i])) {
-      count++;
-    }
+const result = (x, y) => {
+  const x_str = x.toLowerCase().split("");
+  const y_str = y.toLowerCase().split("");
+
+  if (x_str.sort().join("") === y_str.sort().join("")) {
+    console.log(x_str, y_str);
+    return true;
   }
-  return count;
-}
-console.log(number("abd130n"));
-console.log(number("a7711b"));
-console.log(number("dsieh2840237"));
+
+  return false;
+};
+
+const result1 = result("Ben", "Abdu1");
+console.log(result1);
